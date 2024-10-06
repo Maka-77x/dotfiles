@@ -71,15 +71,15 @@
       efi.canTouchEfiVariables = true;
     };
     # Enable KVM nested virtualization
-    extraModprobeConfig = "options kvm_amd nested=1";
+    extraModprobeConfig = "options kvm_intel nested=1";
   };
 
   networking.networkmanager.enable = true;
 
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/London";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+  i18n.defaultLocale = "en_GB.UTF-8";
   # use xkbOptions in tty.
   console.useXkbConfig = true;
 
@@ -107,5 +107,5 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "22.11"; # Did you read the comment?
+  system.stateVersion = "24.05"; # Did you read the comment?
 }

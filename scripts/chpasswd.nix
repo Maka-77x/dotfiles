@@ -11,7 +11,7 @@ writeShellApplication {
     	-o pipefail
 
     # Config constants
-    readonly USERNAME="anomalocaris"                          # Main user username
+    readonly USERNAME="parrmic"                          # Main user username
     readonly PERSIST_DIR="/persist"                           # Persistent partition mount location
     readonly PASSWORD_HASH_DIR="''${1:-}$PERSIST_DIR/passwords" # Directory where password hashes are written to
 

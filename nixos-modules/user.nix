@@ -1,6 +1,6 @@
 { pkgs, ... }:
 let
-  user = "anomalocaris";
+  user = "parrmic";
   persistDir = "/persist";
   passwordDir = "/${persistDir}/passwords";
 in

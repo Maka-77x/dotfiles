@@ -3,7 +3,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
-    users.anomalocaris = {
+    users.parrmic = {
       imports = [
         ../home-modules
         inputs.impermanence.nixosModules.home-manager.impermanence
