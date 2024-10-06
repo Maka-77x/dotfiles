@@ -7,7 +7,7 @@
       updater.enable = true;
     };
     # Enable Yubikey support
-    pcscd.enable = true;
+    pcscd.enable = false;
   };
 
   security = {
