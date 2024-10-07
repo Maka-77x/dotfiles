@@ -14,7 +14,7 @@
     };
 
     extraConfig = {
-      init.defaultBranch = "main";
+      init.defaultBranch = "dev";
       core.autocrlf = "input";
       merge.conflictstyle = "diff3";
       diff.colorMoved = "default";

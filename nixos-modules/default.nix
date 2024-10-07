@@ -85,7 +85,7 @@
 
   hardware = {
     # Enable QMK support
-    keyboard.qmk.enable = true;
+    keyboard.qmk.enable = false;
     # Enable AMD microcode updates
     enableRedistributableFirmware = true;
   };
