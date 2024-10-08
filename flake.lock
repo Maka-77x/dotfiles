@@ -587,6 +587,22 @@
         "type": "github"
       }
     },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1728269138,
+        "narHash": "sha256-oKxDImsOvgUZMY4NwXVyUc/c1HiU2qInX+b5BU0yXls=",
+        "owner": "NixOS",
+        "repo": "nixos-hardware",
+        "rev": "ecfcd787f373f43307d764762e139a7cdeb9c22b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixos-hardware",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1699963925,
@@ -710,6 +726,7 @@
         "miller-yazi": "miller-yazi",
         "nix-gaming": "nix-gaming",
         "nix-index-database": "nix-index-database",
+        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
         "ouch-yazi": "ouch-yazi",
         "relative-motions-yazi": "relative-motions-yazi",

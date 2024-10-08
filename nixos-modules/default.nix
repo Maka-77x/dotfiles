@@ -24,10 +24,27 @@
       inputs.spicetify-nix.nixosModules.spicetify
     ];
   environment.systemPackages = with pkgs; [
-    util-linux intel_gpu_top smartctl nvme-cli lscpu cpupower turbostat
-    dmidecode inxi ethtool iw iwconfig smartctl glxinfo vainfo ly tput mcookie ncurses-bin
-    
-  ]; 
+    util-linux
+    intel_gpu_top
+    smartctl
+    nvme-cli
+    lscpu
+    cpupower
+    turbostat
+    dmidecode
+    inxi
+    ethtool
+    iw
+    iwconfig
+    smartctl
+    glxinfo
+    vainfo
+    ly
+    tput
+    mcookie
+    ncurses-bin
+
+  ];
   nix = {
     settings = {
       experimental-features = [
@@ -55,7 +72,7 @@
   };
 
   nixpkgs = {
-/    overlays = [
+    overlays = [
       # custom overlay
       (import ../pkgs)
       # Hyprland community tools
@@ -110,7 +127,7 @@
 
   # Enable ssh agent
   programs.ssh.startAgent = true;
-  programs.lm_sensor.enable=true;
+  programs.lm_sensor.enable = true;
 
   powerManagement.enable = true;
 
