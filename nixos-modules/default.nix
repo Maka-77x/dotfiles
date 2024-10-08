@@ -40,7 +40,7 @@
     glxinfo
     # vainfo
     # ly
-    tput
+    # tput
     mcookie
     ncurses-bin
 
