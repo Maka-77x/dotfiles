@@ -28,7 +28,7 @@
     # intel_gpu_top
     # smartctl
     nvme-cli
-    lscpu
+    # lscpu
     cpupower
     turbostat
     dmidecode
