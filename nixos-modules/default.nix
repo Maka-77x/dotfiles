@@ -36,7 +36,7 @@
     ethtool
     # iw
     # iwconfig
-    smartctl
+    # smartctl
     glxinfo
     # vainfo
     # ly
