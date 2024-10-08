@@ -41,7 +41,7 @@
     # vainfo
     # ly
     # tput
-    mcookie
+    # mcookie
     ncurses-bin
 
   ];
