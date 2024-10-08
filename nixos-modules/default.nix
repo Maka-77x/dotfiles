@@ -143,7 +143,7 @@
         "modesetting"
         "intel"
       ];
-      useGlamor = true;
+      # useGlamor = true;
     };
     # Enable CUPS to print documents.
     printing.enable = true;
