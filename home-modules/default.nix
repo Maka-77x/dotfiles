@@ -23,6 +23,7 @@
       firefox
       gimp-with-plugins
       itd
+      gh
       keepassxc
       killall
       pavucontrol # Graphical audio controller

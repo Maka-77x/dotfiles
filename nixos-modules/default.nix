@@ -23,7 +23,11 @@
       inputs.nix-gaming.nixosModules.pipewireLowLatency
       inputs.spicetify-nix.nixosModules.spicetify
     ];
-
+  environment.systemPackages = with pkgs; [
+    util-linux intel_gpu_top smartctl nvme-cli lscpu cpupower turbostat
+    dmidecode inxi ethtool iw iwconfig smartctl glxinfo vainfo ly tput mcookie ncurses-bin
+    
+  ]; 
   nix = {
     settings = {
       experimental-features = [
@@ -51,7 +55,7 @@
   };
 
   nixpkgs = {
-    overlays = [
+/    overlays = [
       # custom overlay
       (import ../pkgs)
       # Hyprland community tools
@@ -70,6 +74,10 @@
       };
       efi.canTouchEfiVariables = true;
     };
+    kernelParams = [
+      "i915.force_probe=46a8"
+      "i915.enable_psr=1"
+    ];
     # Enable KVM nested virtualization
     extraModprobeConfig = "options kvm_intel nested=1";
   };
@@ -84,17 +92,43 @@
   console.useXkbConfig = true;
 
   hardware = {
+    firmware.intelWifiFIrmware = true;
     # Enable QMK support
     keyboard.qmk.enable = false;
     # Enable AMD microcode updates
     enableRedistributableFirmware = true;
+    opengl = {
+      enable = true;
+      extraPackages = with pkgs; [
+        vulkan-loader
+        intel-media-driver
+        intel-graphics-compiler
+        vpl-gpu-rt
+      ];
+    };
   };
 
   # Enable ssh agent
   programs.ssh.startAgent = true;
+  programs.lm_sensor.enable=true;
 
+  powerManagement.enable = true;
+
+  sound.enable = true;
   # List services that you want to enable:
   services = {
+    tlp.enable = true;
+    fstrim.enable = true;
+    bolt.enable = true;
+    iwd.enable = true;
+    xserver = {
+      enable = true;
+      videoDrivers = [
+        "modesetting"
+        "intel"
+      ];
+      useGlamor = true;
+    };
     # Enable CUPS to print documents.
     printing.enable = true;
     # Required for udiskie

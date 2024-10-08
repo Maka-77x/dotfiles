@@ -47,7 +47,9 @@ in
     fzf
     fishPlugins.grc
     grc
+    gh
   ];
+
   # Need to enable fish at system level to use as shell
   programs.fish = {
     enable = true;
