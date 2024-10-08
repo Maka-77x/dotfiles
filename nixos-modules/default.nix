@@ -127,7 +127,7 @@
 
   # Enable ssh agent
   programs.ssh.startAgent = true;
-  programs.lm_sensor.enable = true;
+  # programs.lm_sensor.enable = true;
 
   powerManagement.enable = true;
 
