@@ -42,7 +42,7 @@
     # ly
     # tput
     # mcookie
-    ncurses-bin
+    # ncurses-bin
 
   ];
   nix = {
