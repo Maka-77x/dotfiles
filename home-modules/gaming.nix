@@ -10,9 +10,9 @@
     lutris
     packwiz # minecraft modpack creator
     prismlauncher
-    pysolfc
-    runelite
-    sgt-puzzles
+    # pysolfc
+    # runelite
+    # sgt-puzzles
   ];
 
   # Enable wine-ge's fsync support

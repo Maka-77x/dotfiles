@@ -29,6 +29,25 @@ in
   # TODO: See if this line can be moved to disko config
   fileSystems.${persistDir}.neededForBoot = true;
 
+  programs.bash = {
+    interactiveShellInit = ''
+      if [[ $(${pkgs.procps}/bin/ps --no-header --pid=$PPID --format=comm) != "fish" && -z ''${BASH_EXECUTION_STRING} ]]
+      then
+        shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=""
+        exec ${pkgs.fish}/bin/fish $LOGIN_OPTION
+      fi
+    '';
+  };
+
+  environment.systemPackages = with pkgs; [
+    fishPlugins.done
+    fishPlugins.fzf-fish
+    fishPlugins.forgit
+    fishPlugins.hydro
+    fzf
+    fishPlugins.grc
+    grc
+  ];
   # Need to enable fish at system level to use as shell
   programs.fish = {
     enable = true;

@@ -9,7 +9,7 @@
       extraCompatPackages = with pkgs; [ proton-ge-bin ];
     };
     # On-demand system optimization for gaming
-    gamemode.enable = true;
+    gamemode.enable = false;
   };
 
   # Nintendo Pro Controller / Joycon support

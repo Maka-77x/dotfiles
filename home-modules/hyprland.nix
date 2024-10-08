@@ -24,12 +24,14 @@
 
       general = {
         gaps_in = 5;
-        gaps_out = 20;
+        gaps_out = 10;
         border_size = 2;
         "col.active_border" = "0xee$lavenderAlpha 0xee$accentAlpha 45deg";
         "col.inactive_border" = "0xaa$overlay0Alpha 0xaa$mantleAlpha 45deg";
 
         layout = "dwindle";
+        allow_tearing = true;
+        resize_on_border = true;
       };
 
       decoration = {
@@ -38,12 +40,16 @@
 
         blur = {
           enabled = true;
-          size = 3;
+          size = 6;
           passes = 1;
+          vibrancy = 0.2;
+          popups = true;
+          popups_ignorealpha = 0.2;
         };
 
         drop_shadow = true;
-        shadow_range = 4;
+        shadow_ignore_window = true;
+        shadow_range = 22;
         shadow_render_power = 3;
         "col.shadow" = "$base";
       };
@@ -60,7 +66,7 @@
           "border, 1, 10, default"
           "borderangle, 1, 8, default"
           "fade, 1, 7, default"
-          "workspaces, 1, 6, default"
+          "workspaces, 1, 6, slide"
         ];
       };
 
@@ -74,7 +80,14 @@
       master.new_status = "master";
 
       # See https://wiki.hyprland.org/Configuring/Variables/ for more
-      gestures.workspace_swipe = false;
+      gestures = {
+        workspace_swipe = true;
+        workspace_swipe_forever = true;
+      };
+
+      
+
+      
 
       group = {
         "col.border_active" = "0xee$yellowAlpha";
@@ -82,6 +95,7 @@
         "col.border_locked_active" = "0xee$yellowAlpha 0xee$redAlpha 45deg";
         "col.border_locked_inactive" = "0xaa$overlay0Alpha 0xaa$redAlpha 45deg";
         groupbar = {
+          font_size = 11;
           text_color = "$text";
         };
       };
@@ -103,6 +117,13 @@
         "workspace 5, title:^(Spotify.*)$"
         # Inhibit idle on fullscreen programs where keyboard/mouse may not be used for a while
         "idleinhibit fullscreen, class:^(FreeTube)$"
+        "idleinhibit focus, class:^(mpv|.+exe|celluloid)$"
+        "idleinhibit focus, class:^(zen)$, title:^(.*YouTube.*)$"
+        "idleinhibit fullscreen, class:^(zen)$"
+        # Dim
+        "dimaround, class:^(gcr-prompter)$"
+        "dimaround, class:^(xdg-desktop-portal-gtk)$"``
+        "dimaround, class:^(polkit-gnome-authentication-agent-1)$"
         # Disable floating for QEMU screens
         "tile, class:^(.qemu-system-x86_64-wrapped)$"
       ];
@@ -209,6 +230,7 @@
           bg_col = "$base";
           # Always start grid with first workspace
           workspace_method = "first 1";
+
         };
         hyprtrails.color = "$accent";
         hyprwinwrap.class = "hyprwinwrap";
