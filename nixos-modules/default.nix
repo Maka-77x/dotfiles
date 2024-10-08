@@ -136,7 +136,7 @@
   services = {
     tlp.enable = true;
     fstrim.enable = true;
-    bolt.enable = true;
+    # bolt.enable = true;
     iwd.enable = true;
     xserver = {
       enable = true;
