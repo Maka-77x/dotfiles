@@ -14,10 +14,10 @@
     };
 
     extraConfig = {
-      ''
-        [credential]
-        helper = cache
-      '';
+      # ''
+      # [credential]
+      # helper = cache
+      # '';
       init.defaultBranch = "dev";
       core.autocrlf = "input";
       merge.conflictstyle = "diff3";
