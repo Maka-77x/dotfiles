@@ -85,10 +85,6 @@
         workspace_swipe_forever = true;
       };
 
-      
-
-      
-
       group = {
         "col.border_active" = "0xee$yellowAlpha";
         "col.border_inactive" = "0xaa$overlay0Alpha 0xaa$yellowAlpha 45deg";
@@ -122,7 +118,7 @@
         "idleinhibit fullscreen, class:^(zen)$"
         # Dim
         "dimaround, class:^(gcr-prompter)$"
-        "dimaround, class:^(xdg-desktop-portal-gtk)$"``
+        "dimaround, class:^(xdg-desktop-portal-gtk)$"
         "dimaround, class:^(polkit-gnome-authentication-agent-1)$"
         # Disable floating for QEMU screens
         "tile, class:^(.qemu-system-x86_64-wrapped)$"
