@@ -34,12 +34,12 @@
     dmidecode
     inxi
     ethtool
-    iw
-    iwconfig
+    # iw
+    # iwconfig
     smartctl
     glxinfo
-    vainfo
-    ly
+    # vainfo
+    # ly
     tput
     mcookie
     ncurses-bin
