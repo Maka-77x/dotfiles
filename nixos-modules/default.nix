@@ -131,7 +131,6 @@
 
   powerManagement.enable = true;
 
-  sound.enable = true;
   # List services that you want to enable:
   services = {
     tlp.enable = true;
