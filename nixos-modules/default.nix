@@ -25,7 +25,7 @@
     ];
   environment.systemPackages = with pkgs; [
     util-linux
-    intel_gpu_top
+    # intel_gpu_top
     smartctl
     nvme-cli
     lscpu
