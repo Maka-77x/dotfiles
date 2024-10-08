@@ -109,7 +109,7 @@
   console.useXkbConfig = true;
 
   hardware = {
-    firmware.intelWifiFIrmware = true;
+    # firmware.intelWifiFIrmware = true;
     # Enable QMK support
     keyboard.qmk.enable = false;
     # Enable AMD microcode updates
