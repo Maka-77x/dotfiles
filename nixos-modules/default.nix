@@ -29,7 +29,7 @@
     # smartctl
     nvme-cli
     # lscpu
-    cpupower
+    # cpupower
     turbostat
     dmidecode
     inxi
