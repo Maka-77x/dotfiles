@@ -30,7 +30,7 @@
     nvme-cli
     # lscpu
     # cpupower
-    turbostat
+    # turbostat
     dmidecode
     inxi
     ethtool
