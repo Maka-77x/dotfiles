@@ -98,7 +98,7 @@
       # vpl-gpu-rt
       # mesa
       # intel-gpu-tools
-      # intel-compute-runtime
+      intel-compute-runtime
       # intel-graphics-compiler
       # vulkan-loader
     ];
