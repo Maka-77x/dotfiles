@@ -48,13 +48,13 @@
     glxinfo
     intel-gpu-tools
     intel-graphics-compiler
-    intel-media-sdk
+    # intel-media-sdk
     intel-ocl
-    inteltool
+    # inteltool
     libva-utils
     linux-firmware
     mesa
-    vaapi-intel-hybrid
+    # vaapi-intel-hybrid
     vaapiVdpau
     vdpauinfo
     displaylink
