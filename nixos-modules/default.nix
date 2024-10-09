@@ -144,7 +144,7 @@
     # Enable AMD microcode updates
     enableRedistributableFirmware = true;
     opengl = {
-      driSupport = true;
+      # driSupport = true;
       enable = true;
       extraPackages = with pkgs; [
         vulkan-loader
