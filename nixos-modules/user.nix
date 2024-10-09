@@ -48,6 +48,10 @@ in
     fishPlugins.grc
     grc
     gh
+    maestral
+    maestral-gui
+    maestral-qt
+
   ];
 
   # Need to enable fish at system level to use as shell
