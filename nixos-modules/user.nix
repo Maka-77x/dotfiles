@@ -50,7 +50,6 @@ in
     gh
     maestral
     maestral-gui
-    maestral-qt
 
   ];
 
