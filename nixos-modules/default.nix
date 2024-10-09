@@ -45,6 +45,19 @@
     # tput
     # mcookie
     # ncurses-bin
+    glxinfo
+    intel-gpu-tools
+    intel-graphics-compiler
+    intel-media-sdk
+    intel-ocl
+    inteltool
+    libva-utils
+    linux-firmware
+    mesa
+    vaapi-intel-hybrid
+    vaapiVdpau
+    vdpauinfo
+    displaylink
 
   ];
   nix = {
@@ -110,6 +123,10 @@
     options i915 enable_guc=3 enable_fbc=1 enable_dc=0 enable_pcr=0 enable rc6=1
   '';
 
+  environment.variables = {
+    VDPAU_DRIVER = "va_gl";
+    LIBVA_DRIVER_NAME = "iHD";
+  };
   networking.networkmanager.enable = true;
 
   time.timeZone = "Europe/London";
@@ -205,8 +222,9 @@
   services.xserver = {
     enable = true;
     videoDrivers = [
-      "modsetting"
-      # "intel"
+      # "modsetting"
+      "intel"
+      "displaylink"
     ];
     deviceSection = ''
       Option "DRI" "3"

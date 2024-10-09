@@ -81,20 +81,36 @@
     enable = lib.mkDefault true;
     enable32Bit = lib.mkDefault true;
     extraPackages = with pkgs; [
-      intel-vaapi-driver
       intel-media-driver
-      libvdpau-va-gl
+      intel-ocl
+      linux-firmware
+      mesa
+      vaapi-intel-hybrid
+      vaapiIntel
+      vaapiVdpau
       vpl-gpu-rt
-      pkgs.mesa.drivers
-      intel-gpu-tools
-      intel-compute-runtime
-      intel-graphics-compiler
-      vulkan-loader
+      intel-vaapi-driver
+      # intel-media-driver
+      # libvdpau-va-gl
+      # vpl-gpu-rt
+      # mesa
+      # intel-gpu-tools
+      # intel-compute-runtime
+      # intel-graphics-compiler
+      # vulkan-loader
     ];
     extraPackages32 = with pkgs.driversi686Linux; [
-      intel-vaapi-driver
       intel-media-driver
-      libvdpau-va-gl
+      intel-ocl
+      linux-firmware
+      mesa
+      vaapi-intel-hybrid
+      vaapiIntel
+      vaapiVdpau
+      vpl-gpu-rt
+      # intel-vaapi-driver
+      # intel-media-driver
+      # libvdpau-va-gl
     ];
   };
   # hardware.e
