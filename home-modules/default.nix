@@ -18,6 +18,8 @@
   home = {
     homeDirectory = "/home/${config.home.username}";
     packages = with pkgs; [
+      maestral
+      maestral-gui
       armcord
       exercism
       firefox

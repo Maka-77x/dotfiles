@@ -10,6 +10,18 @@
       "Music"
       "Pictures"
       "Videos"
+      ".cache/bat"
+      ".cache/dconf"
+      ".cache/fontconfig"
+      ".cache/gstreamer-1.0"
+      ".cache/helix"
+      ".cache/helm"
+      ".cache/maestral"
+      ".cache/org-persist"
+      ".cache/remmina"
+      ".cache/rust-script"
+      ".cache/thumbnails"
+      ".cache/virt-manager"
       # Gaming-specific stuff
       ".cache/lutris" # Lutris banner cache
       ".config/lutris" # Lutris games and settings
@@ -17,6 +29,16 @@
       ".local/share/lutris" # Lutris runtime data
       ".local/share/PrismLauncher" # Prism Launcher data
       ".local/share/Steam" # Steam games and save data
+      ".local/share/k9s"
+      ".local/share/keyrings"
+      ".local/share/maestral"
+      ".local/share/omni"
+      ".local/share/remmina"
+      ".local/share/talos"
+      ".local/share/wezterm"
+      ".local/share/zoxide"
+      ".local/state/k9s"
+      ".local/state/wireplumber"
       ".PySolFC" # PySolFC settings and save data
       ".runelite" # Runelite settings and cache
       # Other important stuff
