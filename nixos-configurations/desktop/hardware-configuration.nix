@@ -105,7 +105,7 @@
     ];
     extraPackages32 = with pkgs.driversi686Linux; [
       intel-media-driver
-      intel-ocl
+      # intel-ocl
       linux-firmware
       mesa
       vaapi-intel-hybrid
