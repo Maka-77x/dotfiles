@@ -89,7 +89,7 @@
       intel-ocl
       # linux-firmware
       mesa
-      vaapi-intel-hybrid
+      # vaapi-intel-hybrid
       vaapiIntel
       vaapiVdpau
       vpl-gpu-rt
@@ -108,7 +108,7 @@
       # intel-ocl
       # linux-firmware
       mesa
-      vaapi-intel-hybrid
+      # vaapi-intel-hybrid
       vaapiIntel
       vaapiVdpau
       vpl-gpu-rt
