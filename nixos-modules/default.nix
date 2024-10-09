@@ -137,7 +137,7 @@
     #   ];
     # };
     # driSupport = true;
-    driSupport32bit = true;
+    # driSupport32bit = true;
     # firmware.intelWifiFIrmware = true;
     # Enable QMK support
     keyboard.qmk.enable = false;
