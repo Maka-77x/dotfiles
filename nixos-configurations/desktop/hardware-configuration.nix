@@ -112,7 +112,7 @@
       # vaapiIntel
       # vaapiVdpau
       # vpl-gpu-rt
-      intel-vaapi-driver
+      # intel-vaapi-driver
       # intel-media-driver
       # libvdpau-va-gl
     ];
