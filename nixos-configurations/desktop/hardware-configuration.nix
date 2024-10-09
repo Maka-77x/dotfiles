@@ -110,9 +110,9 @@
       mesa
       # vaapi-intel-hybrid
       # vaapiIntel
-      vaapiVdpau
-      vpl-gpu-rt
-      # intel-vaapi-driver
+      # vaapiVdpau
+      # vpl-gpu-rt
+      intel-vaapi-driver
       # intel-media-driver
       # libvdpau-va-gl
     ];
