@@ -87,7 +87,7 @@
       intel-media-driver
       ocl-icd
       intel-ocl
-      # linux-firmware
+      linux-firmware
       mesa
       # vaapi-intel-hybrid
       vaapiIntel
@@ -109,7 +109,7 @@
       # linux-firmware
       mesa
       # vaapi-intel-hybrid
-      vaapiIntel
+      # vaapiIntel
       vaapiVdpau
       vpl-gpu-rt
       # intel-vaapi-driver
