@@ -39,7 +39,7 @@
         cursor-shape.insert = "bar";
         scrolloff = 0;
         color-modes = true;
-        whitespace.render = "on-selection";
+        # whitespace.render = "on-selection";
         statusline = {
           left = [
             "mode"
