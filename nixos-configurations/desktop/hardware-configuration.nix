@@ -41,7 +41,7 @@
       "dm-snapshot"
       "nvme"
     ];
-    systems.enable = true;
+    systemd.enable = true;
   };
   boot.kernelModules = [
     "kvm-intel"
