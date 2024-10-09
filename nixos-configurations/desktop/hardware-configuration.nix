@@ -12,7 +12,7 @@
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
-
+  plymouth.enable = true;
   boot.loader = {
     systemd-boot.enable = true;
   };

@@ -8,8 +8,8 @@
           j.j = "normal_mode";
         };
         normal = {
-          A-i = ":move_line_up";
-          A-k = ":move_line_down";
+          A-i = "move_line_up";
+          A-k = "move_line_down";
           # Workaround for using C-A-i in Zellij
           A-tab = [
             "extend_to_line_bounds"
