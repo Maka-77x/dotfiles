@@ -85,6 +85,7 @@
     enable32Bit = lib.mkDefault true;
     extraPackages = with pkgs; [
       intel-media-driver
+      ocl-icd
       intel-ocl
       linux-firmware
       mesa
