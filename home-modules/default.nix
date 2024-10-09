@@ -43,6 +43,7 @@
       VISUAL = "$EDITOR";
       PAGER = "bat";
       MANPAGER = "sh -c 'col --no-backspaces --spaces | bat --plain --language=man'";
+      LIBVA_DRIVER_NAME = "iHD";
     };
 
     # DON'T TOUCH

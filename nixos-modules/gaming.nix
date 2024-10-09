@@ -15,13 +15,15 @@
   # Nintendo Pro Controller / Joycon support
   services.joycond.enable = true;
   # Support Direct Rendering for 32-bit applications, like Wine
-  hardware.graphics = {
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-      intel-vaapi-driver
-      libva-intel-driver
-    ];
-  };
+  # hardware.graphics = {
+  #   enable32Bit = true;
+  #   extraPackages = with pkgs; [
+  #     libvdpau-va-gl
+  #     intel-media-driver
+  #     intel-vaapi-driver
+
+  #   ];
+  # };
 
   # nix-gaming cache
   nix.settings = {

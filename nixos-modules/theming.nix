@@ -7,6 +7,10 @@
 }:
 {
 
+  # Hi-DPI
+  # console.earlySetup = true;
+  # environment.sessionVariables.GDK_SCALE = "1";  
+  # console.font = lib.mkDefault "${pkgs.terminus_font}/share/consolefonts/ter-u28n.psf.gz";
   # TTY theming
   console = {
     font =
