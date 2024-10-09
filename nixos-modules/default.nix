@@ -120,7 +120,7 @@
   console.useXkbConfig = true;
 
   hardware = {
-    cpu.intel.updateMicrocode = lib.mbkDefault true;
+    cpu.intel.updateMicrocode = lib.mkDefault true;
     intel-gpu-tools.enable = lib.mkDefault true;
     # graphics = {
     #   enable = lib.mkDefault true;
