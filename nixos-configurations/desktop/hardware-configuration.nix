@@ -26,20 +26,23 @@
   ];
   boot.extraModulePackages = [ ];
 
-  boot.initrd.availableKernelModules = [
-    "xhci_pci"
-    "thunderbolt"
-    "nvme"
-    "usb_storage"
-    "usbhid"
-    "sd_mod"
-    "i915"
-    # "ahci"
-  ];
-  boot.initrd.kernelModules = [
-    "dm-snapshot"
-    "nvme"
-  ];
+  boot.initrd = {
+    availableKernelModules = [
+      "xhci_pci"
+      "thunderbolt"
+      "nvme"
+      "usb_storage"
+      "usbhid"
+      "sd_mod"
+      "i915"
+      # "ahci"
+    ];
+    kernelModules = [
+      "dm-snapshot"
+      "nvme"
+    ];
+    systems.enable = true;
+  };
   boot.kernelModules = [
     "kvm-intel"
     "i915"
