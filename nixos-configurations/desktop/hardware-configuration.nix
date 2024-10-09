@@ -90,8 +90,8 @@
       linux-firmware
       mesa
       # vaapi-intel-hybrid
-      vaapiIntel
-      vaapiVdpau
+      # vaapiIntel
+      # vaapiVdpau
       vpl-gpu-rt
       # intel-vaapi-driver
       # intel-media-driver

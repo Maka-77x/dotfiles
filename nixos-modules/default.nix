@@ -46,8 +46,8 @@
     # mcookie
     # ncurses-bin
     glxinfo
-    intel-gpu-tools
-    intel-graphics-compiler
+    # intel-gpu-tools
+    # intel-graphics-compiler
     # intel-media-sdk
     intel-ocl
     # inteltool
@@ -55,8 +55,8 @@
     linux-firmware
     mesa
     # vaapi-intel-hybrid
-    vaapiVdpau
-    vdpauinfo
+    # vaapiVdpau
+    # vdpauinfo
     displaylink
 
   ];
