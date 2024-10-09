@@ -143,19 +143,19 @@
     keyboard.qmk.enable = false;
     # Enable AMD microcode updates
     enableRedistributableFirmware = true;
-    opengl = {
-      # driSupport = true;
-      enable = true;
-      extraPackages = with pkgs; [
-        vulkan-loader
-        intel-media-driver
-        intel-graphics-compiler
-        intel-compute-runtime
-        vpl-gpu-rt
-        pkgs.mesa.drivers
-        intel-gpu-tools
-      ];
-    };
+    # opengl = {
+    #   # driSupport = true;
+    #   enable = true;
+    #   extraPackages = with pkgs; [
+    #     vulkan-loader
+    #     intel-media-driver
+    #     intel-graphics-compiler
+    #     intel-compute-runtime
+    #     vpl-gpu-rt
+    #     pkgs.mesa.drivers
+    #     intel-gpu-tools
+    #   ];
+    # };
   };
 
   # Enable ssh agent

@@ -84,6 +84,12 @@
       intel-vaapi-driver
       intel-media-driver
       libvdpau-va-gl
+      vpl-gpu-rt
+      pkgs.mesa.drivers
+      intel-gpu-tools
+      intel-compute-runtime
+      intel-graphics-compiler
+      vulkan-loader
     ];
     extraPackages32 = with pkgs.driversi686Linux; [
       intel-vaapi-driver
