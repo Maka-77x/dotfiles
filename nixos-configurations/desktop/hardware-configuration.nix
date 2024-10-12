@@ -66,6 +66,10 @@
     "i915.force_probe=4628"
     "i915.enable_psr=1"
     "i915.enable_guc=3"
+    "intel_iommu=on"
+    "scsi_mod.use_blk_mq=1"
+    "iommu=pt"
+    "i915.max_vfs=7"
     "ibt=off" # otherwise VirtualBox breaks?
     "intel_pstate=active"
     "acpi_rev_override=5" # https://forum.endeavouros.com/t/how-to-choose-the-proper-acpi-kernel-argument/6172/5
